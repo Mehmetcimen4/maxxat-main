@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bioreddit - Keşfet">
+  <meta name="keywords" content="bioreddit, keşfet, gönderi, yorum">
+  <meta name="author" content="Maxxat">
+  <link rel="icon" href="path/to/favicon.ico" type="image/x-icon">
+  <title>Bioreddit - Keşfet</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512 (güvenlik kodu)" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style/index.css">
+  <script defer src="script/index.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+    integrity="sha256-oP6HI/tZ1Xl1pJaDG9IrP5NgObd6XbVyExb0EjPLnMw=" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+ 
+   
+</head>
+
+
+<body>
+  <header>
+    <div class="container">
+      <div class="logo-container">
+        <img src="https://dosya.turkmmo.com/2023/03/139214_c83666aa469de2f400b46c631a21f68d.png" alt="Bioreddit Logo">
+      </div>
+      <div class="user-profile">
+        <img src="https://dosya.turkmmo.com/2023/03/139214_2cfa0f7c34ccdf823d4ebd75c1f8640e.jpg" alt="User Profile Image">
+        <span>MAXXAT</span>
+        <button>Çıkış Yap</button>
+      </div>
+      <nav>
+        <a href="#"class="active"><i class="fas fa-home"></i> Ana Sayfa</a>
+        <a href="#"><i class="fas fa-rocket"></i> Keşfet</a>
+        <a href="#"><i class="fas fa-heart"></i> Bildirimler</a>
+        <a href="#"><i class="fas fa-user"></i> Profil</a>
+        <a href="#"><i class="fas fa-plus"></i> Gönderi Paylaş</a>
+        
+      </nav>
+      <div class="search-bar">
+        <input type="text" placeholder="Ara...">
+        <i class="fas fa-search"></i>
+      </div>
+    </div>
+  </header>
+
+  <!-- İlk Gönderi -->
+  <div class="post" id="post1">
+    <div class="user-profile">
+      <img src="https://placekitten.com/50/50" alt="User Profile Image">
+      <span>KullaniciAdi1</span>
+    </div>
+    <img src="https://cdn.discordapp.com/attachments/1084804621337366650/1114135039823855736/kifatlas_A_new_Discord_mascot_similar_to_BMO_3c9473d3-89d1-421a-a1bb-099127d4380a.png?ex=65d8701d&is=65c5fb1d&hm=bb28beb0e3638693004b3dced69d0c06d836a60d95a1f06da71d562b5d78f999&" alt="Random Post Image 1">
+    <h2>İlk Gönderi Başlığı</h2>
+    <p>Bu, birinci gönderi ile ilgili detaylı açıklamalar ve içerik olabilir...</p>
+    <div class="media-buttons like-comment-container">
+      <button onclick="likePost(1)"><i class="fas fa-chevron-up"></i> <span id="likeCount1">10</span></button>
+      <button onclick="dislikePost(1)"><i class="fas fa-chevron-down"></i> <span id="dislikeCount1">2</span></button>
+      <button onclick="toggleComments('comments1')"><i class="fas fa-comment"></i> <span id="commentCount1">5</span></button>
+    </div>
+
+    <!-- Reactions -->
+    <div class="reactions">
+      <span class="reaction-count" id="reactionCount1">0 Tepki</span>
+      <button onclick="reactToPost('like', 1)"><i class="fas fa-thumbs-up reaction-icon"></i> Like</button>
+      <button onclick="reactToPost('love', 1)"><i class="fas fa-heart reaction-icon"></i> Love</button>
+      <button onclick="reactToPost('laugh', 1)"><i class="fas fa-laugh reaction-icon"></i> Laugh</button>
+    </div>
+
+    <!-- Yorumlar -->
+    <div class="comments" id="comments1">
+      <!-- Yorumlar Buraya Eklenecek -->
+    </div>
+
+    <!-- Yorum Yap Alanı -->
+    <div class="comment-input" id="commentInput1">
+      <input type="text" placeholder="Yorumunuzu buraya yazın...">
+      <button onclick="postComment('comments1')">Yorum Yap</button>
+    </div>
+  </div>
+
+  <!-- İkinci Gönderi -->
+  <div class="post" id="post2">
+    <div class="user-profile">
+      <img src="https://placekitten.com/50/50" alt="User Profile Image">
+      <span>KullaniciAdi2</span>
+    </div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3RL7pKFvJMI" frameborder="0" allowfullscreen></iframe>
+
+    <div class="media-buttons like-comment-container">
+      <button onclick="likePost(2)"><i class="fas fa-chevron-up"></i> <span id="likeCount2">25</span></button>
+      <button onclick="dislikePost(2)"><i class="fas fa-chevron-down"></i> <span id="dislikeCount2">3</span></button>
+      <button onclick="toggleComments('comments2')"><i class="fas fa-comment"></i> <span id="commentCount2">12</span></button>
+    </div>
+
+    <!-- Reactions -->
+    <div class="reactions">
+      <span class="reaction-count" id="reactionCount2">0 Tepki</span>
+      <button onclick="reactToPost('like', 2)"><i class="fas fa-thumbs-up reaction-icon"></i> Like</button>
+      <button onclick="reactToPost('love', 2)"><i class="fas fa-heart reaction-icon"></i> Love</button>
+      <button onclick="reactToPost('laugh', 2)"><i class="fas fa-laugh reaction-icon"></i> Laugh</button>
+    </div>
+
+    <!-- Gönderi İçeriği -->
+    <div class="post-content">
+      <h2>İkinci Gönderi Başlığı</h2>
+      <p>Bu, ikinci gönderi ile ilgili detaylı açıklamalar ve içerik olabilir...</p>
+    </div>
+
+    <!-- Yorumlar -->
+    <div class="comments" id="comments2">
+      <div class="comment">
+        <div class="user-profile">
+          <img src="https://placekitten.com/50/50" alt="User Profile Image">
+          <span>YorumYapan1</span>
+        </div>
+        <p>Harika bir gönderi!</p>
+        <button onclick="replyComment(1, 'comments2')">Yanıt Ver</button>
+      </div>
+
+      <!-- Yanıtlanmış Yorum -->
+      <div class="comment reply">
+        <div class="user-profile" style="margin-left: 20px;">
+          <img src="https://placekitten.com/50/50" alt="User Profile Image">
+          <span>YanitYapan1</span>
+        </div>
+        <p>Teşekkür ederim!</p>
+        <button onclick="replyComment(2, 'comments2')">Yanıt Ver</button>
+      </div>
+    </div>
+
+    <!-- Yorum Yap Alanı -->
+    <div class="comment-input" id="commentInput2">
+      <input type="text" placeholder="Yorumunuzu buraya yazın...">
+      <button onclick="postComment('comments2')">Yorum Yap</button>
+    </div>
+  </div>
+
+  <!-- Üçüncü Gönderi -->
+  <div class="post" id="post3">
+    <div class="user-profile">
+      <img src="https://placekitten.com/50/50" alt="User Profile Image">
+      <span>KullaniciAdi3</span>
+    </div>
+    <img src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*tAwBCII-m_CSg3SESLR8vw.png" alt="Random Post Image 3">
+    <h2>Üçüncü Gönderi Başlığı</h2>
+    <p>Bu, üçüncü gönderi ile ilgili detaylı açıklamalar ve içerik olabilir...</p>
+    <div class="media-buttons like-comment-container">
+      <button onclick="likePost(3)"><i class="fas fa-chevron-up"></i> <span id="likeCount3">40</span></button>
+      <button onclick="dislikePost(3)"><i class="fas fa-chevron-down"></i> <span id="dislikeCount3">8</span></button>
+      <button onclick="toggleComments('comments3')"><i class="fas fa-comment"></i> <span id="commentCount3">20</span></button>
+    </div>
+
+    <!-- Reactions -->
+    <div class="reactions">
+      <span class="reaction-count" id="reactionCount3">0 Tepki</span>
+      <button onclick="reactToPost('like', 3)"><i class="fas fa-thumbs-up reaction-icon"></i> Like</button>
+      <button onclick="reactToPost('love', 3)"><i class="fas fa-heart reaction-icon"></i> Love</button>
+      <button onclick="reactToPost('laugh', 3)"><i class="fas fa-laugh reaction-icon"></i> Laugh</button>
+    </div>
+
+    <!-- Yorumlar -->
+    <div class="comments" id="comments3">
+      <!-- Yorumlar Buraya Eklenecek -->
+    </div>
+
+    <!-- Yorum Yap Alanı -->
+    <div class="comment-input" id="commentInput3">
+      <input type="text" placeholder="Yorumunuzu buraya yazın...">
+      <button onclick="postComment('comments3')">Yorum Yap</button>
+    </div>
+  </div>
+
+
+</body>
+
+</html>

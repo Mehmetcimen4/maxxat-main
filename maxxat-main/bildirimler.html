@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bioreddit - Keşfet">
+    <meta name="keywords" content="bioreddit, keşfet, gönderi, yorum">
+    <meta name="author" content="Maxxat">
+    <link rel="icon" href="path/to/favicon.ico" type="image/x-icon">
+    <title>Bioreddit - Keşfet</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512 (güvenlik kodu)" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style/bildirim.css">
+    <script defer src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI/tZ1Xl1pJaDG9IrP5NgObd6XbVyExb0EjPLnMw=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <img src="https://dosya.turkmmo.com/2023/03/139214_c83666aa469de2f400b46c631a21f68d.png" alt="Bioreddit Logo">
+            </div>
+            <div class="user-profile">
+                <img src="https://dosya.turkmmo.com/2023/03/139214_2cfa0f7c34ccdf823d4ebd75c1f8640e.jpg" alt="User Profile Image">
+                <span>MAXXAT</span>
+                <button>Çıkış Yap</button>
+            </div>
+            <nav>
+                <a href="#"><i class="fas fa-home"></i> Ana Sayfa</a>
+                <a href="#"><i class="fas fa-rocket"></i> Keşfet</a>
+                <a href="#" class="active"><i class="fas fa-heart"></i> Bildirimler</a>
+                <a href="#"><i class="fas fa-user"></i> Profil</a>
+                <a href="#"><i class="fas fa-plus"></i> Gönderi Paylaş</a>
+            </nav>
+            <div class="search-bar">
+                <input type="text" placeholder="Ara...">
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Bildirim Paneli -->
+    <div id="bildirim-paneli">
+        <!-- Bildirim 1 -->
+        <div class="bildirim">
+            <h3>Yeni Mesaj</h3>
+            <p class="bildirim-turu">Özel Mesaj</p>
+            <p>Gizli bir mesajınız var. Hemen kontrol et!</p>
+            <p class="tarih">2 saat önce</p>
+        </div>
+
+        <!-- Bildirim 2 -->
+        <div class="bildirim">
+            <h3>Beğeni Alındı</h3>
+            <p class="bildirim-turu">Beğeni</p>
+            <p>Gönderin çok beğenildi. Tebrikler!</p>
+            <p class="tarih">1 gün önce</p>
+        </div>
+
+        <!-- Bildirim 3 -->
+        <div class="bildirim">
+            <h3>Takipçi Kazandınız</h3>
+            <p class="bildirim-turu">Takip</p>
+            <p>Yeni bir takipçiniz var. Hoş geldin!</p>
+            <p class="tarih">3 gün önce</p>
+        </div>
+
+        <!-- Yeni Bildirimler -->
+        <div class="bildirim">
+            <h3>Yeni Takip İsteği</h3>
+            <p class="bildirim-turu">Takip</p>
+            <p>Seni takip etmek isteyen bir kişi var. Onaylamak ister misin?</p>
+            <p class="tarih">4 gün önce</p>
+        </div>
+
+        <div class="bildirim">
+            <h3>Öne Çıkan Gönderi</h3>
+            <p class="bildirim-turu">Keşfet</p>
+            <p>Gönderin, keşfet bölümünde öne çıktı. Tebrikler!</p>
+            <p class="tarih">1 hafta önce</p>
+        </div>
+
+        <div class="bildirim">
+            <h3>Gruba Davet Edildin</h3>
+            <p class="bildirim-turu">Topluluk</p>
+            <p>Bir topluluk sana katılmak için davet gönderdi. Kabul eder misin?</p>
+            <p class="tarih">2 hafta önce</p>
+        </div>
+        
+        <!-- Yeni Bildirimler Buraya Eklenir -->
+    </div>
+
+</body>
+
+</html>
